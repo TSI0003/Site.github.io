@@ -1,0 +1,101 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Current Time Display</title>
+    </head>
+    <body>
+    
+    <h1>Current Time:</h1>
+    <p id="currentTime"></p>
+    
+    <script>
+        function updateCurrentTime() {
+            var currentTimeElement = document.getElementById('currentTime');
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+    
+            // Add leading zero if single digit
+            hours = (hours < 10) ? '0' + hours : hours;
+            minutes = (minutes < 10) ? '0' + minutes : minutes;
+            seconds = (seconds < 10) ? '0' + seconds : seconds;
+    
+            var formattedTime = hours + ':' + minutes + ':' + seconds;
+            currentTimeElement.textContent = formattedTime;
+        }
+    
+        // Update the time every second
+        setInterval(updateCurrentTime, 1000);
+    
+        // Initial call to display the time immediately
+        updateCurrentTime();
+
+    </script>
+    </body>
+
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Territorial.io Embed</title>
+    </head>
+    <body>
+    
+    <h1>Explore Territories with Territorial.io</h1>
+    <p>Explore territories by embedding territorial.io:</p>
+    
+    <iframe src="https://territorial.io/" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+    
+    </body>
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <head>
+        <title> School Stuff</title>
+        <meta name = "description" content="Schooling stuff">
+        <meta name= "keywords" content="Kυριάκο">
+
+    </head>
+
+    <body style="background-color:#FF11FFFF">
+
+    <p style ="color:#999999; font-family:Comic Sans MS; font-size:30pt;">
+        Hello
+    </p>
+
+    <p> 
+        I know where you live
+    </p>
+
+    <p>
+        <a 
+        href="http://www.google.com" style="color:green;font-family:arial; font-size:16pt;">Click here to go to Google.
+        </a>
+    </p>
+
+    <p>
+        <img src="jmss.png">
+    </p>
+
+    </body>
+</html>
